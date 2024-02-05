@@ -1,5 +1,5 @@
 async function tokenCookieMiddleware (req, res, next) {
-    const accessTokenCookie = req.cookies['accessToken'];cc
+    const accessTokenCookie = req.cookies['accessToken'];
     const refreshTokenCookie = req.cookies['refreshToken'];
   
     if (!accessTokenCookie && refreshTokenCookie) {
