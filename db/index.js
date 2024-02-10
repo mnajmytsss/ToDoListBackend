@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const dbConnection = async () => {
     try {
         const client = await new MongoClient(process.env.DB_PROD).connect();
-        const db = client.db('milestone');
+        const db = client.db('todolist');
         
         const listsCollection = db.collection('lists');
         const usersCollection = db.collection('users'); 
